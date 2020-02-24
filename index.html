@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <style>
-            h1 {
+            h1,h2 {
                 color:burlywood;
                 animation-duration: inherit;
                 padding: 50px;
+                animation-fill-mode: forwards;
+                text-align: center;
             }
             body {
                 background-color:ghostwhite;
@@ -17,7 +20,7 @@
                 height: 20%;
                 border-spacing: 15px;
             }
-            p {
+            p,ol {
                 margin-left: 45%;
                 margin-right: 5%;
                 bottom : 1px;
@@ -36,14 +39,14 @@
     </head>
     <body>
         <h1>
-            Blockchain Explaind
+        Blockchain Explaind
         </h1>
-        <table align = "left">
+        <table align="left">
             <tr>
                 <th>Table of content</th>
             </tr>
             <tr>
-                <td> What is blockchain?</td>
+                <td> <a href="#link12">What is blockchain?</a></td>
             </tr>
             <tr>
                 <td>
@@ -66,5 +69,24 @@
             The good news is that blockchain is actually easier to understand than that definition sounds.
         </p>
         <img src="trac.jpg">
+        <h2 id = "link12"> What is Blockchain? </h2>
+        <p> If this technology is so complex, why call it “blockchain?” At its most basic level, blockchain is literally just a chain of blocks, but not in the traditional sense of those words. When we say the words “block” and “chain” in this context, we are actually talking about digital information (the “block”) stored in a public database (the “chain”).
+        </p>
+        <p>“Blocks” on the blockchain are made up of digital pieces of information. Specifically, they have three parts:</p>
+        <ol>
+            <li>
+                Blocks store information about transactions like the date, time, and dollar amount of your most recent purchase from Amazon. (NOTE: This Amazon example is for illustrative purchases; Amazon retail does not work on a blockchain principle as of this writing)
+
+            </li>
+            <li>Blocks store information about who is participating in transactions. A block for your splurge purchase from Amazon would record your name along with Amazon.com, Inc. <a href="https://www.investopedia.com/markets/quote?tvwidgetsymbol=amzn">(AMZN)</a>. Instead of using your actual name, your purchase is recorded without any identifying information using a unique “digital signature,” sort of like a username.</li>
+            <li>
+                Blocks store information that distinguishes them from other blocks. Much like you and I have names to distinguish us from one another, each block stores a unique code called a “hash” that allows us to tell it apart from every other block. Hashes are cryptographic codes created by special algorithms. Let’s say you made your splurge purchase on Amazon, but while it’s in transit, you decide you just can’t resist and need a second one. Even though the details of your new transaction would look nearly identical to your earlier purchase, we can still tell the blocks apart because of their unique codes.
+            </li>
+        
+        </ol>
+        <p>
+            While the block in the example above is being used to store a single purchase from Amazon, the reality is a little different. A single block on the Bitcoin blockchain can actually store up to 1 MB of data. Depending on the size of the transactions, that means a single block can house a few thousand transactions under one roof.
+        </p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/kvyKyRZJYh0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </body>
 </html>
